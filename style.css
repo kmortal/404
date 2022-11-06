@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono';
+}
+
+h1{
+    color: #333333;
+    font-family: 'Inconsolata';
+    margin: 5vh 0 20vh 5vw;    
+    font-size: 24px;
+    letter-spacing: -0.08em;
+}
+
+
+article{
+    margin: 10vh 0 0 10vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(1fr,2);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img text" "img text";
+    justify-items: center;
+    gap: 10vw;
+}
+
+img{
+    width: 115%;
+
+    grid-template-areas: 'img';
+}
+
+div{
+    height: 100%;
+    margin-right: 5vw;
+
+    grid-template-areas: 'text';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+
+p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    width: 80%;
+    color: #4F4F4F
+}
+
+button{
+    width: 15vw;
+    height: 9vh;
+    background-color: #333333;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 1000px){
+    h1{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+        margin-bottom: 6vh;
+        margin-top: 1vh;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        gap:6vh;
+        align-items: center;
+    }
+
+    img{
+        width: 40%;
+    }
+
+    div{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    h2{
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -0.035em;
+        }
+
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.035em;
+    }
+    button{
+        width: 50%;
+    }
+}
